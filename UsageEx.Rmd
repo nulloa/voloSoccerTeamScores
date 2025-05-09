@@ -1,0 +1,21 @@
+---
+title: "Simulated Example"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+load("~/Github/voloSoccerTeamScores/data/simteamdata.rda")
+load("~/Github/voloSoccerTeamScores/data/simgameresults.rda")
+
+
+test <- team_data %>% filter(season == 5)
+old <- team_data %>% filter(season != 5)
+
+match_teams(test, old)
+```
+
+## GitHub Documents
+
+This is an R Markdown format used for publishing markdown documents to GitHub. When you click the **Knit** button all R code chunks are run and a markdown file (.md) suitable for publishing to GitHub is generated.
+
+
